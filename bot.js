@@ -15,7 +15,7 @@ const opts = {
         username: 'EggTimerBot',
         password: process.env.API_KEY
     },
-    channels: JSON.parse(process.env.CHANNELS),
+    channels: process.env.CHANNEL,
     timers: timers
 }
 
