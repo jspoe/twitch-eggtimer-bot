@@ -86,7 +86,6 @@ function setTimer (self, client, target, name, milliseconds) {
         startDate: Date.now()
     }
     var timer = new Timer(function (timer) {
-        this.client.say(this.target, `Timer ${this.name} rings`)
         this.client.say(this.target, `!redeem ping`)
         this.opts.timers[this.name] = null
     }, milliseconds, {
